@@ -7,6 +7,7 @@
 
   <mat-toolbar color="primary" id="header">
     <span>My Application</span>
+    <button (click)="onClick()">cambia</button>
     <button mat-button color="primary" (click)="verSpinner()">Primary</button>
     <button mat-button color="accent">Accent</button>
     <button mat-button color="warn">Warn</button>
@@ -18,3 +19,9 @@
     </mat-menu>
   </mat-toolbar>
   <div class="main"></div>
+  <!-- <div [class]="miclase()"></div> -->
+  <div *ngFor="let item of miArreglo">
+    <div [class]="registro === item.toString() ? 'prove': 'noprove'">{{item}}</div>
+
+  </div>
+
