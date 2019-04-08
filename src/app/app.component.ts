@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  ver = false;
+
+  verSpinner() {
+    this.ver = true;
+    setTimeout(() => {
+      this.ver = false;
+    }, 5000);
+  }
 }

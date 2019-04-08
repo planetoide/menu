@@ -10,5 +10,22 @@
 </head>
 <body>
   <app-root></app-root>
+  <script>
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        document.getElementById("header").style.background = "rgba(63, 81, 181, 0.3)";
+        document.getElementById("padre").style.background = "rgba(102, 51, 153, 0.3)";
+        document.getElementById("prueba").style.paddingTop = "100px";
+        document.getElementById("prueba").style.paddingBottom = "50px";
+      } else {
+        document.getElementById("header").style.background = "rgba(63, 81, 181, 1)";
+        document.getElementById("padre").style.background = "rgba(102, 51, 153, 1)";
+        document.getElementById("prueba").style.paddingTop = "150px";
+        document.getElementById("prueba").style.paddingBottom = "50px";
+      }
+    }
+    </script>
 </body>
 </html>

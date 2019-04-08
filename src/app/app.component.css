@@ -1,0 +1,41 @@
+
+.main {
+    min-height: 400vh;
+}
+
+#header {
+    position: fixed;
+    top: 0; 
+    transition: 1s;
+  }
+.contenedor {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background: rgb(102, 51, 153);
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-end; */
+    /* flex-direction: column; */
+    color: rgb(250, 235, 215);
+    transition: 1s;
+}
+.texto {
+    padding-top: 150px;
+    padding-bottom: 50px;
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: 2.2em;
+    transition: 1s;
+}
+
+.sobre {
+    position: fixed;
+    z-index: 1000;
+    background-color: rgba(51, 95, 95, 0.5);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
